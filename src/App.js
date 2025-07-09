@@ -12,6 +12,10 @@ import FreeForChild from "./components/homepage/promotions/FreeForChild";
 import FreeForOld from "./components/homepage/promotions/FreeForOld";
 import Hangdong from "./components/about/activiti-detail/hangdong";
 import Caukinh from "./components/about/activiti-detail/caukinh";
+import Duongrong from "./components/about/activiti-detail/duongrong";
+import Show from "./components/about/activiti-detail/show";
+import Waterfall from "./components/about/activiti-detail/Waterfall";
+import Cuture from "./components/about/activiti-detail/Cuture";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -36,6 +40,10 @@ function App() {
         />
         <Route path="/activities/hang-dong" element={<Hangdong />} />
         <Route path="/activities/cau-kinh" element={<Caukinh />} />
+        <Route path="/activities/duong-rong" element={<Duongrong />} />
+        <Route path="/activities/show-dai-ngan" element={<Show />} />
+        <Route path="/activities/thac-nuoc" element={<Waterfall />} />
+        <Route path="/activities/van-hoa-co-tu" element={<Cuture />} />
       </Routes>
     </Router>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../layout/footer";
 import Header from "../../layout/header";
 import FloatingButtons from "../../floatingButtons/FloatingButtons";
-export default function Caukinh() {
+export default function Duongrong() {
   return (
     <div className="about-page">
       <Header />

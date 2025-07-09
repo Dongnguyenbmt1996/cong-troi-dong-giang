@@ -25,7 +25,7 @@ export default function FloatingButtons() {
 
       {/* Gọi điện */}
       <a href="tel: " className="call-button icon-animate icon-hover-glow">
-        <span>1900 866644</span>
+        <span>093 497 33 33</span>
         <i className="bi bi-telephone-fill ms-2"></i>
       </a>
 

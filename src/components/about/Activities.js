@@ -21,23 +21,23 @@ export default function Activities() {
     {
       title: "Hành lang dạo bộ hình rồng dài nhất Việt Nam",
       image: "/images/duong-rong.jpg",
-      link: "#",
+      link: "/activities/duong-rong",
     },
 
     {
       title: "Show Đại Ngàn",
       image: "/images/show-dai-ngan.jpg",
-      link: "#",
+      link: "/activities/show-dai-ngan",
     },
     {
       title: "Hệ thống thác nước",
       image: "/images/thac-tien.jpg",
-      link: "#",
+      link: "/activities/thac-nuoc",
     },
     {
       title: "Khám phá văn hóa bản địa",
       image: "/images/cong-troi-dong-giang-1.jpg",
-      link: "#",
+      link: "/activities/van-hoa-co-tu",
     },
   ];
 
