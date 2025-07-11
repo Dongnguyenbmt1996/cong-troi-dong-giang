@@ -488,11 +488,31 @@ export default function HeaderEN() {
             )}
           </li>
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link to="/" className="nav-link" onClick={closeMenu}>
               VI
             </Link>
-          </li>
+          </li> */}
+          <Link
+            to="/"
+            className="nav-link d-flex align-items-center px-2 py-1 rounded"
+            style={{
+              backgroundColor: "#fff",
+              border: "1px solid #ccc",
+              marginLeft: "10px",
+            }}
+            onClick={() => {
+              localStorage.setItem("lang", "vi");
+              window.location.reload();
+            }}
+          >
+            <img
+              src="/images/flag-vn.png"
+              alt="Vietnamese"
+              style={{ width: "20px", height: "14px", marginRight: "6px" }}
+            />
+            VI
+          </Link>
         </ul>
       </div>
 
@@ -660,7 +680,7 @@ export default function HeaderEN() {
             </li>
 
             {/* Language Switcher */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/"
                 className="nav-link"
@@ -671,8 +691,28 @@ export default function HeaderEN() {
               >
                 VI
               </Link>
-            </li>
+            </li> */}
           </ul>
+          <Link
+            to="/"
+            className="nav-link d-flex align-items-center px-2 py-1 rounded"
+            style={{
+              backgroundColor: "#fff",
+              border: "1px solid #ccc",
+              marginLeft: "10px",
+            }}
+            onClick={() => {
+              localStorage.setItem("lang", "vi");
+              window.location.reload();
+            }}
+          >
+            <img
+              src="/images/flag-vn.png"
+              alt="Vietnamese"
+              style={{ width: "20px", height: "14px", marginRight: "6px" }}
+            />
+            VI
+          </Link>
         </nav>
       </header>
     </>
