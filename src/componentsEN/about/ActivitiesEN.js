@@ -9,33 +9,33 @@ import "../css/about.css"; // CSS tuỳ chỉnh
 export default function ActivitiesEN() {
   const activities = [
     {
-      title: "Khám phá hệ thống hang động",
+      title: "Discover the Mysterious Cave System",
       image: "/images/hang-dong.jpg",
       link: "/activities/hang-dong",
     },
     {
-      title: "Check-in Cầu Kính",
+      title: "Explore the Glass Bridge",
       image: "/images/cau-kinh-cong-troi-dong-giang.jpg",
       link: "/activities/cau-kinh",
     },
     {
-      title: "Hành lang dạo bộ hình rồng dài nhất Việt Nam",
+      title: "Explore Vietnam’s Longest Dragon-Shaped Promenade",
       image: "/images/duong-rong.jpg",
       link: "/activities/duong-rong",
     },
 
     {
-      title: "Show Đại Ngàn",
+      title: "Show Dai Ngan",
       image: "/images/show-dai-ngan.jpg",
       link: "/activities/show-dai-ngan",
     },
     {
-      title: "Hệ thống thác nước",
+      title: "The Waterfall Complex",
       image: "/images/thac-tien.jpg",
       link: "/activities/thac-nuoc",
     },
     {
-      title: "Khám phá văn hóa bản địa",
+      title: " Explore Local Culture",
       image: "/images/cong-troi-dong-giang-1.jpg",
       link: "/activities/van-hoa-co-tu",
     },
