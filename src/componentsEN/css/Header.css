@@ -1,0 +1,118 @@
+/* Màu thương hiệu */
+:root {
+  --brand-green: #088f46;
+  --hover-yellow: #ffcd0c;
+}
+.nav-link {
+  color: var(--brand-green) !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.nav-link:hover {
+  color: var(--hover-yellow) !important;
+  font-size: 17px;
+}
+
+.btn-outline-primary {
+  color: var(--brand-green) !important;
+  border-color: var(--brand-green) !important;
+  font-weight: 600 !important;
+  transition: 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  color: black;
+  background-color: var(--hover-yellow) !important;
+  border-color: var(--hover-yellow) !important;
+}
+/* Side nav bên trái */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 25vw;
+  max-width: 280px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1041;
+  transition: left 0.3s ease;
+}
+
+.side-nav.open {
+  left: 0;
+}
+
+/* Overlay nền mờ */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1040;
+}
+
+/* .logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  max-height: 100%;
+} */
+.logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  position: relative;
+}
+
+.nav-bar-header {
+  height: 80px;
+  /* overflow: visible; */
+
+  background-color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 80px; /* to hơn bình thường */
+    width: auto;
+    object-fit: contain;
+    position: relative;
+  }
+  .nav-bar-header {
+    height: 80px;
+
+    /* overflow: visible; */
+
+    background-color: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+.nav-item-chilrend {
+  background-color: #fff;
+}
+
+.dropdown-menu-custom {
+  top: 100%; /* hiển thị bên dưới */
+  left: 0;
+  z-index: 1050;
+  min-width: 220px;
+}
+
+.dropdown-menu-custom .dropdown-item {
+  color: var(--brand-green);
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.dropdown-menu-custom .dropdown-item:hover {
+  background-color: var(--hover-yellow);
+  color: black;
+}

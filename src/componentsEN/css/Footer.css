@@ -1,0 +1,44 @@
+.footer {
+  background-color: #007533fe; /* màu xanh rừng đậm */
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.95rem;
+  margin-top: 28px;
+}
+
+.footer-logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+/* css phần book now */
+.btn-booknow {
+  background-color: #ffffff !important;
+  color: #088f46 !important;
+  padding: 12px 28px;
+  font-weight: 800 !important;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+.btn-booknow:hover {
+  background-color: #ffc107 !important;
+  color: #ffffff !important;
+}

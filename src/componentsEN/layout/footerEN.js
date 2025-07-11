@@ -1,12 +1,13 @@
 import React from "react";
 import "../css/Footer.css";
-import FloatingButtons from "../floatingButtons/FloatingButtons";
-export default function Footer() {
+import FloatingButtonsEN from "../floatingButtons/FloatingButtonsEN";
+
+export default function FooterEN() {
   return (
     <footer className="footer pt-5 pb-3 text-white">
       <div className="container">
         <div className="row gy-4">
-          {/* Cột 1: Logo và mô tả */}
+          {/* Column 1: Logo and Description */}
           <div className="col-lg-3 col-md-6">
             <img
               src="/images/logo-cong-troi-dong-giang-tach-nen.png"
@@ -14,40 +15,41 @@ export default function Footer() {
               className="footer-logo mb-3"
             />
             <p>
-              Khu du lịch sinh thái Cổng Trời Đông Giang là điểm đến trải nghiệm
-              thiên nhiên và văn hóa Cơ Tu, thuộc Tập đoàn FVG.
+              Dong Giang Heaven Gate Ecotourism is a destination to experience
+              nature and Co Tu culture, developed by FVG Group.
             </p>
           </div>
 
-          {/* Cột 2: Thông tin liên hệ */}
+          {/* Column 2: Contact Info */}
           <div className="col-lg-3 col-md-6">
-            <h5 className="fw-bold mb-3">Thông tin liên hệ</h5>
-            <p>📍 Xã Bến Hiên, TP Đà Nẵng</p>
+            <h5 className="fw-bold mb-3">Contact Information</h5>
+            <p>📍 Ben Hien Commune, Da Nang City</p>
             <p>📞 Hotline: 1900 599 999</p>
             <p>📧 Email: booking@congtroidonggiang.com</p>
           </div>
 
-          {/* Cột 3: Liên kết nhanh */}
+          {/* Column 3: Quick Links */}
           <div className="col-lg-3 col-md-6">
-            <h5 className="fw-bold mb-3">VỀ FVG TRAVEL</h5>
+            <h5 className="fw-bold mb-3">ABOUT FVG TRAVEL</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#home">Ưu đãi</a>
+                <a href="#home">Promotions</a>
               </li>
               <li>
-                <a href="#about">Tin tức</a>
+                <a href="#about">News</a>
               </li>
               <li>
-                <a href="#tours">Tuyển dụng</a>
+                <a href="#tours">Careers</a>
               </li>
               <li>
-                <a href="#contact">Liên hệ</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
-          {/* Cột 4: Book phòng */}
+
+          {/* Column 4: Booking */}
           <div className="col-lg-3 col-md-6">
-            <h5 className="fw-bold mb-3">ĐẶT PHÒNG NGAY HÔM NAY</h5>
+            <h5 className="fw-bold mb-3">BOOK YOUR STAY TODAY</h5>
             <a
               href="https://fvgtravel.com.vn/reservation?hotel_id=509067"
               target="_blank"
@@ -62,9 +64,9 @@ export default function Footer() {
         <hr className="my-4" />
 
         <p className="text-center mb-0">
-          © {new Date().getFullYear()} Cổng Trời Đông Giang - FVG Group
+          © {new Date().getFullYear()} Dong Giang Heaven Gate – FVG Group
         </p>
-        <FloatingButtons />
+        <FloatingButtonsEN />
       </div>
     </footer>
   );

@@ -1,0 +1,158 @@
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.call-button {
+  background-color: #e53935;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+}
+
+.call-button:hover {
+  background-color: #d32f2f;
+}
+
+.zalo-button img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.zalo-button:hover img {
+  transform: scale(1.1);
+}
+
+.scroll-top {
+  background-color: #ffc107;
+  border: none;
+  color: black;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.scroll-top:hover {
+  transform: scale(1.1);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.icon-animate {
+  animation: shake 0.5s infinite;
+}
+
+.icon-hover-glow:hover {
+  filter: drop-shadow(0 0 6px gold);
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+/* hiệu ứng nhấp nháy nhẹ */
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Lớp sáng ngoài */
+.icon-flare::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 0, 0, 0.2); /* vòng ngoài mờ */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: flareOuter 2s infinite ease-in-out;
+  z-index: 0;
+}
+
+/* Lớp sáng trong */
+.icon-flare::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.5); /* vòng trong đậm hơn */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: flareInner 2s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes flareOuter {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+}
+
+@keyframes flareInner {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+}
+
+.icon-flare .icon-itself {
+  position: relative;
+  z-index: 2;
+}
